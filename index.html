@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Beni affediyor musun?</title>
+
+<style>
+body {
+  background: #111;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 100px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#hayir {
+  position: absolute;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Beni affediyor musun? 💔</h1>
+
+<button onclick="window.location.href='evet.html'">Evet 💖</button>
+<button id="hayir">Hayır 😒</button>
+
+<script>
+const hayir = document.getElementById("hayir");
+
+hayir.addEventListener("mouseover", () => {
+  hayir.style.left = Math.random() * 80 + "vw";
+  hayir.style.top = Math.random() * 80 + "vh";
+});
+</script>
+
+</body>
+</html>
